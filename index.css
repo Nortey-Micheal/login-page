@@ -1,0 +1,181 @@
+/* *{
+    border: red solid 1px;
+} */
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    color: #030347;
+}
+
+li,a{
+    list-style: none;
+    text-decoration: none;
+    color: lavender;
+}
+.container{
+    width: min(80vw,1100px);
+    margin: 0 auto;
+}
+
+header,footer{
+    background-color: #A020F0;
+    flex-grow: 0;
+    min-width: 540px;
+}
+
+header>div>ul,footer>div>ul{
+    display: flex;
+    justify-content: space-between;
+}
+
+main{
+    height: 90vh;
+    background-image: url(images/lavender2.jpg);
+}
+
+main>div>div:last-of-type{
+    height: 100%;
+    display: flex;
+
+}
+
+main>div{
+    background-color: #E6E6FA;
+    height: 100%;
+    display: flex;
+    margin: 0 0 0 auto;
+    min-width: 540px;
+}
+
+main>div>div{
+    width: 50%;
+    height: 100%;
+}
+
+main>div>div:first-of-type fieldset{
+    display: grid;
+    grid-template: 1fr 1fr 1fr 5fr 1fr 1fr ;
+    grid-template-areas: "l" "h" "p" "d" "b" "p2";
+    height: 100%;
+    align-items: center;
+    border: none;
+    gap: 15px;
+}
+main>div>div fieldset>legend{
+    text-align: center;
+    width: 100%;
+    
+}
+
+input,button{
+    padding: 5px;
+    border-radius: 6px;
+    border: 2px #E6E6FA solid;
+}
+
+main>div>div:last-of-type button{
+    width: max(150px , 30%);
+    background-color: #A020F0;
+    color: #E6E6FA;
+    font-size: medium;
+    font-weight: 700;
+    height: 40px;
+}
+
+input[type="submit"]{
+    width: max(100px , 30%);
+    background-color: #A020F0;
+    color: #E6E6FA;
+    font-size: medium;
+    font-weight: 700;
+}
+
+h2{
+    text-decoration: wavy;
+    text-decoration-color: #A020F0;
+}
+
+main>div>div:first-of-type fieldset>p:first-of-type{
+    grid-area: p;
+}
+
+main>div>div:first-of-type fieldset>p:last-of-type{
+    grid-area: p2;
+}
+
+main>div>div:first-of-type fieldset>legend{
+    grid-area: l;
+}
+
+main>div>div:first-of-type fieldset>h3{
+    grid-area: h;
+}
+
+main>div>div:first-of-type fieldset>input{
+    grid-area: b;
+}
+
+main>div>div:first-of-type fieldset>div{
+    grid-area: d;
+    gap: 15px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(min(100%,250px),250px));
+}
+
+main>div>div:first-of-type fieldset>div>div{
+    display: flex;
+    flex-direction: column;
+}
+
+main>div>div:last-of-type fieldset>div>div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;    
+}
+
+
+main>div>div:last-of-type fieldset{
+    border: none;
+    height: 64%;
+    display: grid;
+    grid-template-rows: 1fr 1fr 6fr 1fr 1fr;
+    grid-template-areas: "l" "h" "d" "b" "p2";
+}
+main>div>div:last-of-type fieldset>legend{
+    grid-area: l;
+}
+
+main>div>div:last-of-type fieldset>h3{
+    grid-area: h;
+    margin-top: -15px;
+}
+
+main>div>div:last-of-type fieldset>div{
+    grid-area: d;
+}
+
+main>div>div:last-of-type fieldset>button{
+    grid-area: b;
+}
+
+main>div>div:last-of-type fieldset>p{
+    grid-area: p2;
+}
+
+main>div>div p>a{
+    color: purple;
+    text-decoration: underline;
+}
+
+main>div>div:last-of-type fieldset>div{
+    gap: 15px;
+    width: clamp(min(100%,250px),300px,100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 15px;
+}

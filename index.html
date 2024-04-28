@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Flare || Be stylish and beyond</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <ul>
+          <li><a href="#">Logo</a></li>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="signup">
+          <form action="#" method="post" id="signup">
+            <fieldset>
+              <legend>
+                <h2>SIGN UP</h2>
+              </legend>
+              <h3>HELLO NEWBIE!</h3>
+              <p>PLease fill in your details to enter the world of FLARE</p>
+              <div class="data">
+                <div>
+                  <label for="firstName">FIRST NAME</label>
+                  <input type="text" placeholder="Joe" id="firstName" />
+                </div>
+                <div>
+                  <label for="lastName">LAST NAME</label>
+                  <input type="text" placeholder="Smith" id="lastName" />
+                </div>
+                <div>
+                  <label for="email">EMAIL</label
+                  ><input
+                    type="email"
+                    id="email"
+                    placeholder="czar@hotmain.com"
+                    pattern="/\w{1,}(\-)?\w\@\w{1,}\.\w{2,3}(\.\w{2,3})?/g"
+                  />
+                </div>
+                <div>
+                  <label for="number">PHONE NUMBER</label
+                  ><input
+                    type="text"
+                    placeholder="+233-432-644-754"
+                    pattern="^[\+]{1}[\d]{3}(\-)?[\d]{3}(\-)?[\d]{3}(\-)?[\d]{3}"
+                  />
+                </div>
+                <div>
+                  <label for="password">PASSWORD</label
+                  ><input
+                    type="password"
+                    placeholder="drers757ir"
+                    pattern="([A-za-z0-9]{1,}[\@\#\$\%\*\!]{1,}){7,10}"
+                  />
+                </div>
+                <div>
+                  <label for="confirm">CONFIRM PASSWORD</label
+                  ><input
+                    type="password"
+                    placeholder="drers757ir"
+                    pattern="([A-za-z0-9]{1,}[\@\#\$\%\*\!]{1,}){7,10}"
+                  />
+                </div>
+              </div>
+              <input type="submit" value="SIGN UP" />
+              <p>Already having an account? <a href="#login">Log in</a></p>
+            </fieldset>
+            
+          </form>
+        </div>
+        <div class="login">
+          <form action="get" id="login">
+            <fieldset>
+              <legend><h2>LOG IN</h2></legend>
+              <h3>WELCOME BACK!!</h3>
+              <div>
+                <div>
+                  <label for="email">EMAIL</label
+                  ><input
+                    type="email"
+                    pattern="/\w{1,}(\-)?\w\@\w{1,}\.\w{2,3}(\.\w{2,3})?/g"
+                  />
+                </div>
+                <div>
+                  <label for="password">PASSWORD</label
+                  ><input
+                    type="password"
+                    pattern="([A-za-z0-9]{1,}[\@\#$\%\*\!]{1,}){7,10}"
+                  />
+                </div>
+              </div> <br>
+              <button type="submit">LOG IN</button>
+              <p>Don't have an account? <a href="#signup">Sign up here</a></p>
+            </fieldset>
+            
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="container">
+        <ul>
+          <li><a href="#">HOME</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">ABOUT</a></li>
+        </ul>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
