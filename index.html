@@ -26,15 +26,25 @@
                 <h2>SIGN UP</h2>
               </legend>
               <h3>HELLO NEWBIE!</h3>
-              <p>PLease fill in your details to enter the world of FLARE</p>
+              <p>PLease fill in your details to enter the world of <span>FLARE</span></p>
               <div class="data">
                 <div>
                   <label for="firstName">FIRST NAME</label>
-                  <input type="text" placeholder="Joe" id="firstName" />
+                  <input
+                    type="text"
+                    placeholder="Joe"
+                    required
+                    id="firstName"
+                  />
                 </div>
                 <div>
                   <label for="lastName">LAST NAME</label>
-                  <input type="text" placeholder="Smith" id="lastName" />
+                  <input
+                    type="text"
+                    placeholder="Smith"
+                    required
+                    id="lastName"
+                  />
                 </div>
                 <div>
                   <label for="email">EMAIL</label
@@ -43,6 +53,7 @@
                     id="email"
                     placeholder="czar@hotmain.com"
                     pattern="/\w{1,}(\-)?\w\@\w{1,}\.\w{2,3}(\.\w{2,3})?/g"
+                    required
                   />
                 </div>
                 <div>
@@ -51,6 +62,7 @@
                     type="text"
                     placeholder="+233-432-644-754"
                     pattern="^[\+]{1}[\d]{3}(\-)?[\d]{3}(\-)?[\d]{3}(\-)?[\d]{3}"
+                    required
                   />
                 </div>
                 <div>
@@ -59,6 +71,7 @@
                     type="password"
                     placeholder="drers757ir"
                     pattern="([A-za-z0-9]{1,}[\@\#\$\%\*\!]{1,}){7,10}"
+                    required
                   />
                 </div>
                 <div>
@@ -67,13 +80,13 @@
                     type="password"
                     placeholder="drers757ir"
                     pattern="([A-za-z0-9]{1,}[\@\#\$\%\*\!]{1,}){7,10}"
+                    required
                   />
                 </div>
               </div>
               <input type="submit" value="SIGN UP" />
               <p>Already having an account? <a href="#login">Log in</a></p>
             </fieldset>
-            
           </form>
         </div>
         <div class="login">
@@ -83,24 +96,30 @@
               <h3>WELCOME BACK!!</h3>
               <div>
                 <div>
-                  <label for="email">EMAIL</label
+                  <label for="loginEmail">EMAIL</label
                   ><input
                     type="email"
-                    pattern="/\w{1,}(\-)?\w\@\w{1,}\.\w{2,3}(\.\w{2,3})?/g"
+                    placeholder="czar@hotmain.com"
+                    id="loginEmail"
+                    pattern="\w{1,}(\-)?\w\@\w{1,}\.\w{2,3}(\.\w{2,3})?"
+                    required
                   />
                 </div>
                 <div>
-                  <label for="password">PASSWORD</label
+                  <label for="loginPassword">PASSWORD</label
                   ><input
                     type="password"
-                    pattern="([A-za-z0-9]{1,}[\@\#$\%\*\!]{1,}){7,10}"
+                    placeholder="jgyftFTFU7565"
+                    id="loginPassword"
+                    pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+                    required
                   />
                 </div>
-              </div> <br>
+              </div>
+              <br />
               <button type="submit">LOG IN</button>
               <p>Don't have an account? <a href="#signup">Sign up here</a></p>
             </fieldset>
-            
           </form>
         </div>
       </div>

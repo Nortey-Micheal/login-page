@@ -11,10 +11,15 @@ body{
     color: #030347;
 }
 
+span{
+    font-size: larger;
+    font-weight: 800;
+}
+
 li,a{
     list-style: none;
     text-decoration: none;
-    color: lavender;
+    color: #E6E6FA;
 }
 .container{
     width: min(80vw,1100px);
@@ -22,7 +27,7 @@ li,a{
 }
 
 header,footer{
-    background-color: #A020F0;
+    background-color: #030347;
     flex-grow: 0;
     min-width: 540px;
 }
@@ -34,7 +39,9 @@ header>div>ul,footer>div>ul{
 
 main{
     height: 90vh;
-    background-image: url(images/lavender2.jpg);
+    /* background-image: url(images/lavender2.jpg); */
+    background-image: linear-gradient(to bottom right,#E6E6FA,#A020f0,#030347);
+    padding: 15px;
 }
 
 main>div>div:last-of-type{
@@ -49,11 +56,13 @@ main>div{
     display: flex;
     margin: 0 0 0 auto;
     min-width: 540px;
+    border-radius: 30px;
 }
 
 main>div>div{
     width: 50%;
     height: 100%;
+    border-radius: 30px;
 }
 
 main>div>div:first-of-type fieldset{
@@ -65,10 +74,25 @@ main>div>div:first-of-type fieldset{
     border: none;
     gap: 15px;
 }
+
 main>div>div fieldset>legend{
     text-align: center;
     width: 100%;
     
+}
+
+.activated fieldset>legend{
+    font-size: x-large;
+    transition: ease-in;
+    color: aqua;
+}
+
+.activated fieldset a{
+    color: aqua;
+}
+
+.activated span{
+    color: aqua;
 }
 
 input,button{
@@ -92,6 +116,18 @@ input[type="submit"]{
     color: #E6E6FA;
     font-size: medium;
     font-weight: 700;
+}
+
+input:not([type="submit"]):valid{
+    border: greenyellow 1px solid;
+}
+
+input:not([type="submit"]):invalid{
+    border: red 1px solid;
+}
+
+input:not([type="submit"]):placeholder-shown{
+    border: 2px #E6E6FA solid;
 }
 
 h2{
@@ -130,6 +166,7 @@ main>div>div:first-of-type fieldset>div>div{
     display: flex;
     flex-direction: column;
 }
+/* \w{1,}(\-)?\w\@\w{1,}\.\w{2,3}(\.\w{2,3})? */
 
 main>div>div:last-of-type fieldset>div>div{
     display: flex;
