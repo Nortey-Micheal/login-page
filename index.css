@@ -45,15 +45,14 @@ header>div>ul,footer>div>ul{
 
 main{
     flex-grow: 1;
-    height: 92vh;
+    min-height: 92vh;
     background-image: linear-gradient(to bottom right,#E6E6FA,#A020f0,#030347);
     padding: 15px;
 }
 
 main>div>div:last-of-type{
-    height: 100%;
+    min-height: 100%;
     display: flex;
-
 }
 
 main>div>div:last-of-type form{
@@ -61,17 +60,38 @@ main>div>div:last-of-type form{
 }
 
 main>div{
+    position: relative;
     background-color: #E6E6FA;
-    height: 100%;
+    min-height: 92vh;
     display: flex;
     margin: 0 0 0 auto;
-    /* min-width: 540px; */
     border-radius: 30px;
+}
+
+main>div>label{
+    position: absolute;
+    color: red;
+    background-color: #E6E6FA;
+    width: 100px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-weight: 700;
+    bottom: 50px;
+}
+
+main>div>label:first-of-type{
+    left: 50px;
+}
+
+main>div>label:last-of-type{
+    right: 50px;
+    
 }
 
 main>div>div{
     width: 50%;
-    height: 100%;
+    min-height: 100%;
     border-radius: 30px;
 }
 
@@ -331,6 +351,10 @@ main>div>div:last-of-type:is(.not-active) fieldset>div{
 
     main>div>div{
         width: 100%;
+    }
+
+    main>div>label{
+        bottom: 15px;
     }
 
 }
