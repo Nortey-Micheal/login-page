@@ -1,10 +1,27 @@
+@font-face {
+    font-family: "Inter";
+    src: url(Inter-VariableFont_slnt\,wght.ttf);
+}
+
+@font-face {
+    font-family: "young-serif";
+    src: url(YoungSerif-Regular.ttf);
+}
+
 body{
+    font-family: Inter;
     margin: 0;
     padding: 0;
     line-height: 1.5;
     display: flex;
     flex-direction: column;
     color: #030347;
+}
+
+legend,
+h2,h3,
+span{
+    font-family: young-serif , Inter;
 }
 
 span{
@@ -70,8 +87,8 @@ main>div{
 
 main>div>label{
     position: absolute;
-    color: red;
-    background-color: #E6E6FA;
+    color: #E6E6FA;
+    background-color: #A020F0;
     width: 100px;
     padding: 5px;
     text-align: center;
