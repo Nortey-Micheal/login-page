@@ -357,4 +357,8 @@ main>div>div:last-of-type:is(.not-active) fieldset>div{
         bottom: 15px;
     }
 
+    main>div>div{
+        padding-bottom: 70px;
+    }
+
 }
