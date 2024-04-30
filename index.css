@@ -110,6 +110,7 @@ main>div>div{
     width: 50%;
     min-height: 100%;
     border-radius: 30px;
+    padding-bottom: 70px;
 }
 
 main>div>div:first-of-type fieldset{
@@ -372,10 +373,6 @@ main>div>div:last-of-type:is(.not-active) fieldset>div{
 
     main>div>label{
         bottom: 15px;
-    }
-
-    main>div>div{
-        padding-bottom: 70px;
     }
 
 }
